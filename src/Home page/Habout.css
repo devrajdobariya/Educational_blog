@@ -40,5 +40,6 @@
     .awrapper{
       display: flex;
       justify-content: space-around;
+      
     }
 }
