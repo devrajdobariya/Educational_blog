@@ -30,3 +30,15 @@
   background-position: center;
 /* background-image: url("images"); */
 }
+
+/* =======meadia query====== */
+
+@media screen and (max-width: 768px) {
+    .responsive{
+      /* text-align: center; */
+    }
+    .awrapper{
+      display: flex;
+      justify-content: space-around;
+    }
+}

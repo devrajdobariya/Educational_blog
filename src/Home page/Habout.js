@@ -21,7 +21,7 @@ export function Habout() {
                     <Col md={5} sm={10} className="">
 
                         {/* <Heading subtitle="LEARN ANYTHING" title="Benefits About Online Learning Expertise"></Heading> */}
-                        <Heading subtitle="LEARN ANYTHING" title="Benefits About Online Learning Expertise"></Heading>
+                        <Heading className="responsive" subtitle="LEARN ANYTHING" title="Benefits About Online Learning Expertise"></Heading>
                         {
                             homeAbout.map((value) => {
                                 return (
