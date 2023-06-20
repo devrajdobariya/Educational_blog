@@ -1,0 +1,20 @@
+.subheading{
+    color: #1eb2a6;
+}
+.social{
+    margin-left: 0px;
+}
+.link ul li{
+    content: "⟶";
+    color: #1eb2a6;
+    margin-right: 5px;
+}
+ul li{
+    margin-bottom: 10px;
+}
+.icon{
+    font-size: 24px;
+}
+.bg{
+    background-color: #dedbdb;
+}

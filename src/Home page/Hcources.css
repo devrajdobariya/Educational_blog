@@ -1,3 +1,22 @@
 .btnenrol{
     background-color: #1eb2a6;
 }
+.title{
+    font-weight: 1000;
+}
+.name{
+    font-weight: 900 !important;
+
+}
+/* .icon{
+    color: #1eb2a6;
+    font-size: 6px !important;
+    font-weight: 500;
+} */
+.course{
+    font-weight: 400;
+}
+/* .coursenumber{
+    border: 2px;
+    border-color: #1eb2a6      ;
+} */

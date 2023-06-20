@@ -1,5 +1,6 @@
 import imgc from './courses/c1.png'
 import img2 from './back.webp';
+import imh4 from'./back.webp';
 
 export const homeAbout = [
     {
@@ -47,7 +48,7 @@ export const homeAbout = [
   export const coursesCard = [
     {
       id: 1,
-      cover: {imgc},
+      cover: {imh4},
       coursesName: "Introducing to Software Engineering",
       courTeacher: [
         {
@@ -170,5 +171,154 @@ export const homeAbout = [
       ],
       priceAll: "$20 All Course",
       pricePer: "$3 per month",
+    },
+  ]
+  
+  export const online = [
+    {
+      cover: "./images/courses/online/o1.png",
+      hoverCover: "./images/courses/online/o1.1.png",
+      courseName: "UI/UX Design Courses",
+      course: "25 Courses",
+    },
+    {
+      cover: "./images/courses/online/o2.png",
+      hoverCover: "./images/courses/online/o2.1.png",
+      courseName: "Art & Design",
+      course: "25 Courses",
+    },
+    {
+      cover: "./images/courses/online/o3.png",
+      hoverCover: "./images/courses/online/o3.1.png",
+      courseName: "Computer Science",
+      course: "10 Courses",
+    },
+    {
+      cover: "./images/courses/online/o4.png",
+      hoverCover: "./images/courses/online/o4.1.png",
+      courseName: "History & Archeologic",
+      course: "15 Courses",
+    },
+    {
+      cover: "./images/courses/online/o5.png",
+      hoverCover: "./images/courses/online/o5.1.png",
+      courseName: "Software Engineering",
+      course: "30 Courses",
+    },
+    {
+      cover: "./images/courses/online/o6.png",
+      hoverCover: "./images/courses/online/o6.1.png",
+      courseName: "Information Software",
+      course: "60 Courses",
+    },
+    {
+      cover: "./images/courses/online/o7.png",
+      hoverCover: "./images/courses/online/o7.1.png",
+      courseName: "Health & Fitness",
+      course: "10 Courses",
+    },
+    {
+      cover: "./images/courses/online/o8.png",
+      hoverCover: "./images/courses/online/o8.1.png",
+      courseName: "Marketing",
+      course: "30 Courses",
+    },
+    {
+      cover: "./images/courses/online/o9.png",
+      hoverCover: "./images/courses/online/o9.1.png",
+      courseName: "Graphic Design",
+      course: "80 Courses",
+    },
+    {
+      cover: "./images/courses/online/o10.png",
+      hoverCover: "./images/courses/online/o10.1.png",
+      courseName: "Music",
+      course: "120 Courses",
+    },
+    {
+      cover: "./images/courses/online/o11.png",
+      hoverCover: "./images/courses/online/o11.1.png",
+      courseName: "Business Administration",
+      course: "17 Courses",
+    },
+    {
+      cover: "./images/courses/online/o12.png",
+      hoverCover: "./images/courses/online/o12.1.png",
+      courseName: "Web Management",
+      course: "17 Courses",
+    },
+  ]
+  export const testimonal = [
+    {
+      id: 1,
+      name: "ROGER SCOTT",
+      post: "MARKETING MANAGER",
+      desc: "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.",
+      cover: "./images/testo/t1.webp",
+    },
+    {
+      id: 2,
+      name: "ROGER SCOTT",
+      post: "MARKETING MANAGER",
+      desc: "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.",
+      cover: "./images/testo/t2.webp",
+    },
+    {
+      id: 3,
+      name: "ROGER SCOTT",
+      post: "MARKETING MANAGER",
+      desc: "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.",
+      cover: "./images/testo/t3.webp",
+    },
+  ]
+  export const blog = [
+    {
+      id: 1,
+      type: "admin",
+      date: "JAN. 18, 2021",
+      com: "3 COMMENTS ",
+      title: "Build your Dream Software & Engineering Career",
+      desc: "A small river named Duden flows by their place and supplies it with the necessary regelialia.",
+      cover: "../images/blog/b1.webp",
+    },
+    {
+      id: 2,
+      type: "admin",
+      date: "API. 25, 2022",
+      com: "5 COMMENTS ",
+      title: "Build your Dream Software & Engineering Career",
+      desc: "A small river named Duden flows by their place and supplies it with the necessary regelialia.",
+      cover: "../images/blog/b2.webp",
+    },
+    {
+      id: 3,
+      type: "user",
+      date: "MAY. 15, 2022",
+      com: "10 COMMENTS ",
+      title: "Build your Dream Software & Engineering Career",
+      desc: "A small river named Duden flows by their place and supplies it with the necessary regelialia.",
+      cover: "../images/blog/b3.webp",
+    }
+  ]
+  export const price = [
+    {
+      name: "BASIC PLAN",
+      price: "49K",
+      desc: "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.",
+    },
+    {
+      name: "BEGINNER PLAN",
+      price: "79K",
+      desc: "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.",
+    },
+    {
+      name: "PREMIUM PLAN",
+      price: "109k",
+      desc: "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.",
+    },
+    {
+      name: "ULTIMATE PLAN",
+      price: "149K",
+      desc: "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.",
     },
   ]

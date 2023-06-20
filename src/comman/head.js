@@ -7,6 +7,7 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
+import { Link } from "react-router-dom";
 
 export function Head() {
     return (
@@ -37,12 +38,12 @@ export function Head() {
                     <Navbar.Toggle aria-controls="basic-navbar-nav " />
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="me-auto ">
-                            <Nav.Link href="#home" className="ps-0 text-white">HOME</Nav.Link>
+                            <Nav.Link href="#home" className="ps-0 text-white"><Link to="/" >HOME</Link></Nav.Link>
 
                             <NavDropdown title="ALL COURCES" id="basic-nav-dropdown" className="ps-5 text-white">
-                                <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
+                                <NavDropdown.Item href="#action/3.1"><Link to="/popular Cources">POPULAR COURCES</Link></NavDropdown.Item>
                                 <NavDropdown.Item href="#action/3.2">
-                                    Another action
+                                    <Link to="/Online Cources">ONLINE COURCES</Link>
                                 </NavDropdown.Item>
                                 <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
                                 <NavDropdown.Divider />
@@ -53,10 +54,10 @@ export function Head() {
 
 
 
-                            <Nav.Link href="#link" className="ps-5 text-white">ABOUT</Nav.Link>
+                            <Nav.Link  className="ps-5 text-white"><Link to="/about">ABOUT</Link></Nav.Link>
                             <Nav.Link href="#link" className="ps-5 text-white">TEAM</Nav.Link>
-                            <Nav.Link href="#link" className="ps-5 text-white">PRICING</Nav.Link>
-                            <Nav.Link href="#link" className="ps-5 text-white">BLOG</Nav.Link>
+                            <Nav.Link  className="ps-5 text-white"><Link to="/Pricing">PRICING</Link></Nav.Link>
+                            <Nav.Link href="#link" className="ps-5 text-white"><Link to="/Blog">Blog</Link></Nav.Link>
                             <Nav.Link href="#link" className="ps-5 text-white">CONTACT</Nav.Link>
 
                         </Nav>

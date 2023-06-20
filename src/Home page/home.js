@@ -8,6 +8,10 @@ import './home.css'
 import { Habout } from "./Habout";
 import { Head } from "../comman/head";
 import { Hcources } from "./Hcources";
+import { Htestomonial } from "./Htestomonial";
+import { Hblog } from "./Hblog";
+import { Hprice } from "./Hprice";
+import { Footer } from "../comman/footer";
 export function Home() {
   return (
     <>
@@ -57,6 +61,19 @@ export function Home() {
       {/* ========start cources section========= */}
       <Hcources></Hcources>
       {/* ========end cources section========= */}
+{/* ==========start testomonial======== */}
+<Htestomonial></Htestomonial>
+{/* ==========end testomonial======== */}
+{/* ==========satrt blog======== */}
+
+<Hblog></Hblog>
+{/* ==========end blog======== */}
+{/* ========start price========= */}
+<Hprice></Hprice>
+{/* ==========end price========== */}
+{/* ========start footer========= */}
+<Footer></Footer>
+{/* ========end footer========= */}
 
     </>
   )

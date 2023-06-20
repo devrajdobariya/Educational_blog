@@ -1,15 +1,44 @@
-import './Hcources.css'
-import { Heading } from '../comman/heading'
-import { Container, Row, Col, Image, Button } from 'react-bootstrap'
+import React from "react";
+import { Container, Row, Col, Button } from "react-bootstrap";
+import { Head } from "../comman/head";
+import { Heading } from "../comman/heading";
+import { Hprice } from "../Home page/Hprice";
+import { Footer } from "../comman/footer";
+import { Hcources } from "../Home page/Hcources";
 import Card from 'react-bootstrap/Card';
 import ListGroup from 'react-bootstrap/ListGroup';
 // import Image from 'react-bootstrap'
-import { coursesCard,online } from '../images/dummydata'
+import { coursesCard, online } from '../images/dummydata'
 import { AiFillStar } from "react-icons/ai";
-import { Link } from 'react-router-dom';
-export function Hcources() {
+import './cources.css';
+
+
+export function Popularcource() {
     return (
         <>
+            <Container fluid>
+                <div className="hero">
+
+                    <Head></Head>
+
+                    {/* ======above class hero for bg img====== */}
+                    <Row className="heading">
+                        <Col style={{ marginTop: "80px" }}><h5>WELCOME TO ACADEMIA</h5></Col>
+                    </Row>
+                    <Row className="heading">
+                        <Col><h1>Best Online Education <br></br>Expertise</h1></Col>
+                    </Row>
+                    {/* <Heading subtitle="WELCOME TO ACADEMIA" title="Best Online Education <br></br>Expertise" ></Heading> */}
+                    <Row className="heading">
+                        <Col><p>Far far away,behind the word mountain, far from the countries<br></br> Vokalia and Consonatia ,there live the Blind texts.</p></Col>
+                    </Row>
+                    <Row className="heading">
+                        <Col><Button style={{ backgroundColor: "#03877c" }}>GET STARTED NOW</Button>
+
+                            <Button style={{ color: "#03877c" }} className="ms-5 bg-white">VIEW COURCES</Button></Col>
+                    </Row>
+                </div>
+            </Container>
             <Container>
                 <Row className='text-center mb-4'>
                     <Heading subtitle="OUR COURCES" title="Explore Our Popular Online Courses"></Heading>
@@ -51,7 +80,7 @@ export function Hcources() {
                                             </ListGroup>
                                             <Card.Body>
                                                 <Button className=' btnenrol'>ENROLL NOW !</Button>
-{/* <Link className='btn btn-sucess' to= */}
+
                                             </Card.Body>
                                         </Col>
                                     </Card>
@@ -60,28 +89,10 @@ export function Hcources() {
                         })
                     }
                 </Row>
-                <Row className='text-center mb-4'>
-                    <Heading subtitle="COURSES" title="Browse Our Online Courses"></Heading>
-                </Row>
-                <Row>
-                    {
-                        online.map((value) => {
-                            return (
-                                <>
+            </Container>
+            {/* <Hcources></Hcources> */}
 
-                                    <Col md={2} className='border'>
-                                        <Image src={value.cover } ></Image>
-                                        <h5 className='course'>{value.courseName}</h5>
-                                        <h6 className='coursenumber'>{value.course}</h6>
-                                    </Col>
-                                </>
-                            )
-                        })
-                    }
-                </Row>
-            </Container >
-
-
+            <Footer></Footer>
         </>
     )
 }

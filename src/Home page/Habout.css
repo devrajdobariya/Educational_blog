@@ -7,6 +7,18 @@
     transition: 0.5s;
     color: white;
 }
+
+.desc{
+  color: rgb(150, 149, 149);
+}
+.card.desc:hover{
+  color: rgb(242, 238, 238);
+
+}
+.title{
+  font-weight: 800;
+
+}
 /* =======awraper section====== */
 
 .awrapper{

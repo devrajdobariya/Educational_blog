@@ -4,7 +4,7 @@ import { Container, Row, Col, Image } from "react-bootstrap";
 
 import Img1 from '../images/about.webp'
 // import { homeAbout,awrapper } from "./dummydata";
-import { homeAbout,awrapper } from "../images/dummydata";
+import { homeAbout, awrapper } from "../images/dummydata";
 import { Heading } from "../comman/heading";
 import './Habout.css';
 
@@ -27,19 +27,23 @@ export function Habout() {
                                 return (
                                     <>
                                         <div className="card mb-3 mt-4" style={{ maxWidth: "540px" }}>
-
-                                            <div class="row no-gutters">
-                                                <div class="col-md-4">
+                                           
+                                                <div className="row no-gutters">
+                                                <div className="col-md-4">
+                                                
                                                     <img src={value.cover} class="card-img" alt="..."></img>
-                                                </div>
-                                                <div class="col-md-8">
-                                                    <div class="card-body">
-                                                        <h5 class="card-title">{value.title}</h5>
-                                                        <p class="card-text">{value.desc}.</p>
-                                                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
                                                     </div>
+                                                
+                                                    <div className="col-md-8">
+                                                    <div className="card-body">
+                                                        <h5 className="card-title title">{value.title}</h5>
+                                                        <p className="card-text desc">{value.desc}.</p>
+                                                        <p className="card-text"><small className="text-muted">Last updated 3 mins ago</small></p>
+                                                    </div>
+                                                    </div>
+                                                
                                                 </div>
-                                            </div>
+                                            
                                         </div>
                                     </>
                                 )
@@ -51,18 +55,18 @@ export function Habout() {
             {/* ========end about section============= */}
             {/* ==========start awarpper section====== */}
             <Container fluid className="mt-5">
-                <Row className="awrapper d-flex justify-content-end text-white">
+                <Row className="awrapper d-flex justify-content-ar text-white">
                     {
                         awrapper.map((val) => {
                             return (
                                 <>
-                                  
-                                    <Col md={3} className="mt-4">
-                                     <Image src={val.cover}></Image>
+
+                                    <Col md={3} className="mt-2">
+                                        <Image fluid src={val.cover}></Image>
                                         <Col><h1>{val.data}</h1></Col>
                                         <Col>{val.title}</Col>
                                     </Col>
-                                   
+
                                 </>
                             )
                         })
