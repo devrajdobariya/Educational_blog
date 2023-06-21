@@ -1,8 +1,9 @@
 import React from "react";
 import './Htestominal.css';
-import { Container, Row, Col, Image } from "react-bootstrap";
+import { Container, Row, Col } from "react-bootstrap";
 import { Heading } from "../comman/heading";
 import { testimonal } from "../images/dummydata";
+import Image from "react-bootstrap/Image";
 
 export function Htestomonial() {
     return (
@@ -29,13 +30,15 @@ export function Htestomonial() {
                         testimonal.map((value)=>{
                             return(
                                 <>
-                                 <Col>
+                                 <Col className="bg-light ms-2 ">
                         <Row className="">
-                            <Col><img src={value.cover}></img>
+                            <Col>
+                            {/* <img fluid src={value.cover}></img> */}
+                            <Image className="mb-2 mt-2" fluid src={value.cover} roundedCircle></Image>
                             </Col>
-                            <Col> 
-                               <h4 className="heading">{value.name}</h4>
-                                <h6 className="subheading">{value.post}</h6>
+                            <Col className="mt-5"> 
+                               <h5 className="heading ms-2 ">{value.name}</h5>
+                                <p className="subheading ms-2">{value.post}</p>
                             </Col>
                         </Row>
                         <Row>

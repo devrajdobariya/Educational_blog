@@ -31,7 +31,7 @@ export function Habout() {
                                                 <div className="row no-gutters">
                                                 <div className="col-md-4">
                                                 
-                                                    <img src={value.cover} class="card-img" alt="..."></img>
+                                                    <img className="ms-5 mt-5" src={value.cover} class="card-img" alt="..."></img>
                                                     </div>
                                                 
                                                     <div className="col-md-8">

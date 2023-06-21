@@ -22,9 +22,9 @@ export function Hblog() {
                                     <Col md={3}>
 
                                         <Card style={{ width: '18rem' }}>
-                                            <Card.Img variant="top" src={value.cover} />
+                                            <Card.Img className='mb-2' variant="top" src={value.cover} />
                                             <Card.Body>
-                                                <Card.Title>{value.title}</Card.Title>
+                                                <Card.Title className='mb-3'>{value.title}</Card.Title>
                                                 <Card.Text>
                                                    {value.desc}
                                                 </Card.Text>

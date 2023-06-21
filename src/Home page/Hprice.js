@@ -4,6 +4,7 @@ import { price } from "../images/dummydata";
 import Card from 'react-bootstrap/Card';
 import { Heading } from "../comman/heading";
 import Button from 'react-bootstrap/Button';
+import { Link } from "react-router-dom";
 
 export function Hprice() {
     return (
@@ -27,6 +28,7 @@ export function Hprice() {
                                                    {value.desc}
                                                 </Card.Text>
                                                 <Button className=' btn-outline'>GET STARTED</Button>
+                                                <Link to='/singleprice' data={value}>singleprice</Link>
                                             </Card.Body>
                                         </Card>
 

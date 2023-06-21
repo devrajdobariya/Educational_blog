@@ -9,6 +9,7 @@ import { Pricing } from './Pricing page/Pricing';
 import { Blog } from './Blog Page/Blog';
 import { Popularcource } from './Cources page/All cources';
 import { Onlinecource } from './Cources page/Online cources';
+import { SinglePrice } from './Home page/singleprice';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
           <Route path='/about' Component={About}></Route>
          <Route path='/Pricing' Component={Pricing}></Route>
          <Route path='/Blog' Component={Blog}></Route>
+         <Route path='/singleprice' Component={SinglePrice}></Route>
         </Routes>
       </BrowserRouter>
       {/* <Home></Home> */}

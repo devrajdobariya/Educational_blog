@@ -255,21 +255,21 @@ export const homeAbout = [
       name: "ROGER SCOTT",
       post: "MARKETING MANAGER",
       desc: "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.",
-      cover: "./images/testo/t1.webp",
+      cover: require("../images/testo/t1.webp"),
     },
     {
       id: 2,
       name: "ROGER SCOTT",
       post: "MARKETING MANAGER",
       desc: "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.",
-      cover: "./images/testo/t2.webp",
+      cover: require("../images/testo/t2.webp"),
     },
     {
       id: 3,
       name: "ROGER SCOTT",
       post: "MARKETING MANAGER",
       desc: "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.",
-      cover: "./images/testo/t3.webp",
+      cover: require("../images/testo/t3.webp"),
     },
   ]
   export const blog = [
@@ -280,7 +280,7 @@ export const homeAbout = [
       com: "3 COMMENTS ",
       title: "Build your Dream Software & Engineering Career",
       desc: "A small river named Duden flows by their place and supplies it with the necessary regelialia.",
-      cover: "../images/blog/b1.webp",
+      cover: require("../images/blog/b1.webp"),
     },
     {
       id: 2,
@@ -289,7 +289,7 @@ export const homeAbout = [
       com: "5 COMMENTS ",
       title: "Build your Dream Software & Engineering Career",
       desc: "A small river named Duden flows by their place and supplies it with the necessary regelialia.",
-      cover: "../images/blog/b2.webp",
+      cover: require("../images/blog/b2.webp"),
     },
     {
       id: 3,
@@ -298,7 +298,7 @@ export const homeAbout = [
       com: "10 COMMENTS ",
       title: "Build your Dream Software & Engineering Career",
       desc: "A small river named Duden flows by their place and supplies it with the necessary regelialia.",
-      cover: "../images/blog/b3.webp",
+      cover: require("../images/blog/b3.webp"),
     }
   ]
   export const price = [
