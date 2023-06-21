@@ -1,5 +1,7 @@
 import React from "react";
 import { Container, Row, Col, Button } from "react-bootstrap";
+import Image from 'react-bootstrap/Image';
+
 import { Head } from "../comman/head";
 import { Heading } from "../comman/heading";
 import { Hprice } from "../Home page/Hprice";
@@ -17,7 +19,7 @@ export function Popularcource() {
     return (
         <>
             <Container fluid>
-                <div className="hero">
+                <div className="chero">
 
                     <Head></Head>
 
@@ -49,10 +51,11 @@ export function Popularcource() {
                             return (
                                 <>
 
-                                    <Card className='mb-4' style={{ width: '18rem ', height: "400" }}>
-                                        {/* <Col> */}
-                                        <Card.Img variant="top" src={value.cover} />
-                                        {/* </Col> */}
+                                    <Card className='mb-4 bgcolor' style={{ width: '18rem ', height: "400" }}>
+                                        <Col>
+                                        
+                                            <Card.Img fluid className='courceimg text-center mt-2' variant="top" src={value.cover} roundedCircle />
+                                        </Col>
                                         <Col>
                                             <Card.Body>
                                                 <Card.Title className='title'>{value.coursesName}</Card.Title>
@@ -61,12 +64,20 @@ export function Popularcource() {
                                                     {value.courTeacher.map((details) => (
                                                         <>
                                                             <div className='box'>
-                                                                <div className='dimg'>
-                                                                    <img src={details.dcover} alt='' />
-                                                                </div>
-                                                                <div className='para name'>
-                                                                    <h4>{details.name}</h4>
-                                                                </div>
+                                                                <Row>
+                                                                    <Col md={6}>
+                                                                        <div>
+                                                                            {/* <Image fluid src={details.dcover} alt='' /> */}
+                                                                            <Image className='dimg' src={details.dcover} roundedCircle />
+                                                                        </div>
+                                                                    </Col>
+                                                                    <Col md={6}>
+                                                                        <div className='para name'>
+                                                                            <p>{details.name}</p>
+                                                                        </div>
+                                                                    </Col>
+                                                                </Row>
+
                                                             </div>
                                                             <span>{details.totalTime}</span>
                                                         </>
@@ -79,8 +90,9 @@ export function Popularcource() {
 
                                             </ListGroup>
                                             <Card.Body>
-                                                <Button className=' btnenrol'>ENROLL NOW !</Button>
-
+                                                {/* <Button className=' btnenrol'>ENROLL NOW !</Button> */}
+                                                <Button variant="outline-light">ENROLL NOW !</Button>
+                                                {/* <Link className='btn btn-sucess' to= */}
                                             </Card.Body>
                                         </Col>
                                     </Card>

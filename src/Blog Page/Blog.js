@@ -11,7 +11,7 @@ export function Blog(){
     return(
         <>
          <Container fluid>
-        <div className="hero">
+        <div className="bhero">
         
           <Head></Head>
           

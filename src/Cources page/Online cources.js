@@ -10,7 +10,7 @@ export function Onlinecource(){
     return(
         <>
          <Container fluid>
-                <div className="hero">
+                <div className="chero">
 
                     <Head></Head>
 
@@ -40,14 +40,22 @@ export function Onlinecource(){
                     {
                         online.map((value) => {
                             return (
+                                // <>
+
+                                //     <Col md={2} className='border'>
+                                //         <Image fluid src={value.cover } ></Image>
+                                //         <h5 className='course'>{value.courseName}</h5>
+                                //         <h6 className='coursenumber'>{value.course}</h6>
+                                //     </Col>
+                                // </>
                                 <>
 
-                                    <Col md={2} className='border'>
-                                        <Image src={value.cover } ></Image>
-                                        <h5 className='course'>{value.courseName}</h5>
-                                        <h6 className='coursenumber'>{value.course}</h6>
-                                    </Col>
-                                </>
+                                <Col md={2} className='border text-center bg-light'>
+                                    <Image fluid className='onlineimg mt-2' src={value.cover } ></Image>
+                                    <h5 className='course mt-2'>{value.courseName}</h5>
+                                    <h6 className='coursenumber'>{value.course}</h6>
+                                </Col>
+                            </>
                             )
                         })
                     }

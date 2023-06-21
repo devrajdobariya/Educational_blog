@@ -3,9 +3,14 @@
 }
 .title{
     font-weight: 1000;
+    /* color: rgb(117, 113, 113); */
 }
 .name{
     font-weight: 900 !important;
+
+}
+.bgcolor{
+    background-color: #1eb2a6;
 
 }
 /* .icon{
@@ -20,3 +25,19 @@
     border: 2px;
     border-color: #1eb2a6      ;
 } */
+.onlineimg{
+    width: 45%;
+    height: 45%;
+    /* margin-left: 40px; */
+}
+.courceimg{
+    background-color: #1eb2a6;
+    width: 50%;
+    /* height: 50%; */
+    margin-left: 60px;
+
+}
+.dimg{
+    width: 80%;
+  height: 80%;
+}

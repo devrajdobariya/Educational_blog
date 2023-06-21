@@ -9,7 +9,7 @@ export function About(){
     return(
         <>
         <Container fluid>
-        <div className="hero">
+        <div className="ahero">
         
           <Head></Head>
           

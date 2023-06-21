@@ -9,7 +9,7 @@ export function Pricing(){
     return(
         <>
          <Container fluid>
-        <div className="hero">
+        <div className="phero">
         
           <Head></Head>
           
